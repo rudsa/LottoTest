@@ -1,6 +1,8 @@
+import java.util.Scanner;
+
 public class LottoTest {
     public static void main(String[] args) {
-        System.out.println("Hello World");
-        System.out.println("test");
+        Scanner scanner = new Scanner(System.in);
+
     }
 }

@@ -5,11 +5,17 @@ public class LottoResultChecker {
 
     LottoTest lottoTest = new LottoTest();
 
-    public int[] getLottoNumArray() {
-        return lottoNumArray;
+    public static int lottoGameCnt;
+    public static int lottoResult;
+
+    public static void setLottoGameCnt(int lottoGameCnt) {
+        LottoResultChecker.lottoGameCnt = lottoGameCnt;
     }
 
-    public int[] getLottoResultNumArray() {
-        return lottoResultNumArray;
+    public static int getLottoResult() {
+        LottoNumGenerator [] lottoGameCntArray  = new LottoNumGenerator  [lottoGameCnt];
+        for(int i=0; i<lottoGameCntArray.length; i++){
+        }
+        return lottoResult;
     }
 }

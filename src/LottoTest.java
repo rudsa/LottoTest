@@ -6,10 +6,15 @@ public class LottoTest {
         LottoNumGenerator lottoNumGenerator = new LottoNumGenerator();
         int[] randomLottoNumArray = lottoNumGenerator.getLottoGameArray();
 
+        LottoResultChecker lottoResultChecker = new LottoResultChecker();
+
         Scanner scan = new Scanner(System.in);
         System.out.print("몇 게임 구매 하시겠어요?");
         int lottoGameBuyCnt = scan.nextInt();
 
+        lottoResultChecker.setLottoGameCnt(lottoGameBuyCnt);
+
+        lottoResultChecker.getLottoResult();
 //        switch (lottoGameBuyCnt){
 //            case 0:
 //                System.out.println("구매하지 않으시는군요");

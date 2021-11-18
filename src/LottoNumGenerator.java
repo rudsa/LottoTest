@@ -11,7 +11,6 @@ public class LottoNumGenerator {
 
     public void setLottoGameBuyCount(int lottoGameBuyCount) {
         this.lottoGameBuyCount = lottoGameBuyCount;
-        setRandomLottoNum();
     }
 
     public void setRandomLottoNum(){

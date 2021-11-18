@@ -1,9 +1,9 @@
 public class LottoResultChecker {
     LottoNumGenerator lottoNumGenerator = new LottoNumGenerator();
-    int [][] lottoGameNumArray = lottoNumGenerator.getLottoGameNumArray();
-    int [] lottoGameResultArray = lottoNumGenerator.getLottoGameResultArray();
-    int []lottoResult = new int [lottoGameNumArray.length];
-    int resultCnt = 0;
+    int [][] lottoGameNumArray;
+    int [] lottoGameResultArray;
+    int []lottoResult;
+    int resultCnt;
 
     public int[] getLottoResult() {
         return lottoResult;
@@ -11,9 +11,15 @@ public class LottoResultChecker {
 
     public void lottoResultChecker(){
         for(int i=0; i<lottoGameNumArray.length; i++){
+            resultCnt = 0;
             for(int j=0; j<lottoGameNumArray[i].length; j++){
-
+                for(int h=0; h<lottoGameResultArray.length; h++){
+                    if(lottoGameNumArray[i][j] == lottoGameResultArray[h] ){
+                        resultCnt++;
+                    }
+                }
             }
+            lottoResult[i] = resultCnt;
         }
     }
 }

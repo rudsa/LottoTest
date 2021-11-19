@@ -22,6 +22,7 @@ public class LottoTest {
             }
             System.out.println(lottoResultChecker.getLottoResult()[i]);
         };
+        System.out.print("Result Num ");
         for(int i=0; i<lottoResultChecker.getLottoGameResultArray().length; i++){
             System.out.print(lottoResultChecker.getLottoGameResultArray()[i] + " ");
         }

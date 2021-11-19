@@ -26,11 +26,14 @@ public class LottoNumGenerator {
         }
     }
 
-    public int[] getLottoGameResultArray() {
-        return lottoGameResultArray;
+    public int getLottoGameBuyCount() {
+        return lottoGameBuyCount;
     }
-
     public int[][] getLottoGameNumArray() {
         return lottoGameNumArray;
+    }
+
+    public int[] getLottoGameResultArray() {
+        return lottoGameResultArray;
     }
 }

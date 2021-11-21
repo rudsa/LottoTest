@@ -20,6 +20,10 @@ public class LottoResultChecker {
                         resultCnt++;
                     }
                 }
+                if(resultCnt == 5 && lottoGameNumArray[i][j] == lottoGameResultArray[lottoGameResultArray.length]){
+                    resultCnt++;
+                    resultCnt++;
+                }
             }
             lottoResult[i] = resultCnt;
         }
@@ -43,6 +47,9 @@ public class LottoResultChecker {
                     break;
                 case 6:
                     lottoResult[i] = 1;
+                    break;
+                case 7:
+                    lottoResult[i] = 2;
                     break;
                 default:
                     break;

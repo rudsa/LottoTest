@@ -3,14 +3,14 @@ import java.util.Scanner;
 
 public class LottoTest {
     public static void main(String[] args) {
-        LottoNumGenerator lottoNumGenerator = new LottoNumGenerator();
-        LottoResultChecker lottoResultChecker = new LottoResultChecker();
 
         Scanner scan = new Scanner(System.in);
         System.out.print("몇 게임 구매 하시겠어요?");
         int lottoGameBuyCnt = scan.nextInt();
+        LottoNumGenerator lottoNumGenerator = new LottoNumGenerator();
         lottoNumGenerator.setLottoGameBuyCount(lottoGameBuyCnt);
         lottoNumGenerator.setRandomLottoNum();
+        LottoResultChecker lottoResultChecker = new LottoResultChecker();
         lottoResultChecker.setLottoGameBuyCnt(lottoNumGenerator.getLottoGameBuyCount());
         lottoResultChecker.setLottoGameNumArray(lottoNumGenerator.getLottoGameNumArray());
         lottoResultChecker.setLottoGameResultArray(lottoNumGenerator.getLottoGameResultArray());

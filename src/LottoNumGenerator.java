@@ -5,7 +5,7 @@ public class LottoNumGenerator {
     LottoConstants lottoConstants = new LottoConstants();
     int lottoGameBuyCount;
     int lottoGameArrayLength = lottoConstants.lottoGameNumArray;
-    int [] lottoGameResultArray = lottoConstants.lottoGameResultArray;
+    int [] lottoGameResultArray = new int[lottoConstants.lottoGameResultArray];
     int[][] lottoGameNumArray;
 
 

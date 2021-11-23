@@ -9,7 +9,7 @@ public class LottoTest {
         int lottoGameBuyCnt = scan.nextInt();
         LottoNumGenerator lottoNumGenerator = new LottoNumGenerator();
         lottoNumGenerator.setLottoGameBuyCount(lottoGameBuyCnt);
-        lottoNumGenerator.setRandomLottoNum();
+        lottoNumGenerator.generateRandomLottoNum();
         LottoResultChecker lottoResultChecker = new LottoResultChecker();
         lottoResultChecker.setLottoGameBuyCnt(lottoNumGenerator.getLottoGameBuyCount());
         lottoResultChecker.setLottoGameNumArray(lottoNumGenerator.getLottoGameNumArray());

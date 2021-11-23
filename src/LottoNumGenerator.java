@@ -13,7 +13,7 @@ public class LottoNumGenerator {
         this.lottoGameBuyCount = lottoGameBuyCount;
     }
 
-    public void setRandomLottoNum(){
+    public void generateRandomLottoNum(){
         lottoGameNumArray = new int [lottoGameBuyCount][lottoGameArrayLength];
         for(int i=0; i<lottoGameNumArray.length; i++){
             for(int j=0; j<lottoGameNumArray[i].length; j++){

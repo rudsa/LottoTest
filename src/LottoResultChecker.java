@@ -21,8 +21,7 @@ public class LottoResultChecker {
                     }
                 }
                 if(resultCnt == 5 && lottoGameNumArray[i][j] == lottoGameResultArray[lottoGameResultArray.length]){
-                    resultCnt++;
-                    resultCnt++;
+                    resultCnt = 7;
                 }
             }
             lottoResult[i] = resultCnt;

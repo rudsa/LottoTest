@@ -1,3 +1,5 @@
+package step1;
+
 public class LottoResultChecker {
     LottoNumGenerator lottoNumGenerator = new LottoNumGenerator();
     int lottoGameBuyCnt;

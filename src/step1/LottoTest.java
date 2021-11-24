@@ -1,4 +1,5 @@
-import java.util.Random;
+package step1;
+
 import java.util.Scanner;
 
 public class LottoTest {

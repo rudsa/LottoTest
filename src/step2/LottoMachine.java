@@ -10,9 +10,10 @@ public class LottoMachine {
     }
     private int createRanNum(){
         Random randomNum = new Random();
-        randomNum.nextInt(45);
-        List<String> randomLottoNum = new ArrayList<>();
+        int lottonRandomNumber = randomNum.nextInt(45);
 
+        List<Integer> randomLottoNum = new ArrayList<>();
+        randomLottoNum.add(lottonRandomNumber);
         return 1;
     }
 }
